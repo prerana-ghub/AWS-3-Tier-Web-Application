@@ -23,29 +23,7 @@ The infrastructure was built inside a custom VPC and integrates **EC2, Applicati
 
 ## 🏗️ Architecture
 
-```text
-                         INTERNET
-                            |
-                            v
-                   Application Load Balancer
-                            |
-                            v
-                    Auto Scaling Group
-                       /          \
-                      v            v
-                   EC2 #1       EC2 #2
-                  Apache        Apache
-                      \            /
-                       \          /
-                        v        v
-                         RDS MySQL
-                       (Private)
-
-                   EC2 --------> S3
-                    |
-                    v
-                IAM Role
-```
+![AWS Architecture](architecture/architecture.png)
 
 ## 🔧 Implementation
 
